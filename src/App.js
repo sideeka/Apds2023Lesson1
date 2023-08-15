@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+// added
+import React from 'react';
+import LoginForm from './LoginForm';
+
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +14,16 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <input
+          type="text"
+          pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+          title="Must be at least 8 characters long with letters, numbers, and special characters."
+        />
+
+
+<LoginForm />
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,7 +34,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
+  );// end return
+}// end app
 
 export default App;
